@@ -6,9 +6,11 @@
 /*   By: phelebra <xhelp00@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 09:52:22 by phelebra          #+#    #+#             */
-/*   Updated: 2023/01/30 12:22:23 by phelebra         ###   ########.fr       */
+/*   Updated: 2023/02/02 16:19:26 by phelebra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "get_next_line.h"
 
 char	*get_next_line(int fd)
 {
