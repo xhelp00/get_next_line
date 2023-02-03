@@ -6,7 +6,7 @@
 /*   By: phelebra <xhelp00@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 09:52:52 by phelebra          #+#    #+#             */
-/*   Updated: 2023/02/03 10:43:12 by phelebra         ###   ########.fr       */
+/*   Updated: 2023/02/03 11:23:54 by phelebra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 #  define BUFFER_SIZE 4242
 # endif
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
 
 char	*get_next_line(int fd);
 char	*ft_strjoin(char *s1, char *s2);

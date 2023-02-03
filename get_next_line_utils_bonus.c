@@ -6,7 +6,61 @@
 /*   By: phelebra <xhelp00@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 09:54:18 by phelebra          #+#    #+#             */
-/*   Updated: 2023/01/30 09:56:21 by phelebra         ###   ########.fr       */
+/*   Updated: 2023/02/03 10:59:18 by phelebra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line_bonus.h"
+
+char	*ft_strjoin(char *s1, char *s2)
+{
+	char	*join;
+	size_t	i;
+	size_t	j;
+
+	if (!s1)
+	{
+		s1 = (char *)malloc(1 * sizeof(char));
+		*s1 = '\0';
+	}
+	join = malloc (sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1);
+	if (!join)
+		return (NULL);
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		join[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (s2[j] != '\0')
+		join[i++] = s2[j++];
+	join[i] = '\0';
+	free(s1);
+	return (join);
+}
+
+char	*ft_strchr(const char *s, int c)
+{
+	if (!s)
+		return (NULL);
+	while (*s)
+	{
+		if (*s == c)
+			return ((char *)s);
+		s++;
+	}
+	if (*s != c)
+		return (NULL);
+	return ((char *)s);
+}
+
+size_t	ft_strlen(const char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
