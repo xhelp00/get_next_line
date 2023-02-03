@@ -6,11 +6,12 @@
 /*   By: phelebra <xhelp00@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 09:52:22 by phelebra          #+#    #+#             */
-/*   Updated: 2023/01/30 12:22:23 by phelebra         ###   ########.fr       */
+/*   Updated: 2023/01/31 12:51:37 by phelebra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*get_next_line(int fd)
 {
+	static char	*s;
 	
 }
